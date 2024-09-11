@@ -16,3 +16,6 @@ p strong{
   color: black;
   background-color: cornsilk;
 }
+ul {
+  background-image: //Props/cats.webp;
+}
