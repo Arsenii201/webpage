@@ -35,3 +35,7 @@ a {
 a:checked{
   color: chartreuse;
 }
+img{
+  width: auto;
+  height: 300px;
+}
