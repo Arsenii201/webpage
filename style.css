@@ -7,14 +7,14 @@ body{
   background-color: cornsilk;
   color: black;
   font-family: Georgia, Serlif;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 p{
   margin-left: 2vw;
 }
 p strong{
   font-weight: bold;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
   color: black;
   background-color: cornsilk;
 }
@@ -25,7 +25,7 @@ em {
   font-style: italic;
   color: gainsboro;
   font-family: sans-serif;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
 }
 a {
   font-weight: bold;
