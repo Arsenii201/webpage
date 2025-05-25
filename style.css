@@ -14,7 +14,7 @@ p{
 }
 p strong{
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   color: black;
   background-color: cornsilk;
 }
@@ -25,7 +25,7 @@ em {
   font-style: italic;
   color: gainsboro;
   font-family: sans-serif;
-  font-size: 1.5em;
+  font-size: 0.9em;
 }
 a {
   font-weight: bold;
