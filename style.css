@@ -48,17 +48,17 @@ a {
                       /* Modal Content/Box */
       .modal-content {
         background-color: #fefefe;
-        margin: 15vw auto; /* 15% from the top and centered */
+        margin: 15% auto; /* 15% from the top and centered */
         padding: 20px;
-        border: 1vw solid black;
-        width: 80vw; /* Could be more or less, depending on screen size */
+        border: 1% solid black;
+        width: 80%; /* Could be more or less, depending on screen size */
       }
 
                                 /* The Close Button */
       .close {
         color: green;
         float: right;
-        font-size: 28vw;
+        font-size: 28%;
         font-weight: bold;
       }
 
@@ -69,8 +69,6 @@ a {
         cursor: pointer;
       }
       .modal img{
-        max-width: fit-content;
-        max-height: fit-content;
       }
 
 a:checked{
