@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink">
+<description>
+    <title-info>
+        <genre>antique</genre>
+        <author><first-name>Arsenii</first-name><last-name>M</last-name></author>
+        <book-title>Unknown</book-title>
+        <lang>en</lang>
+    </title-info>
+    <document-info>
+        <author><first-name>Arsenii</first-name><last-name>M</last-name></author>
+        <program-used>calibre 4.99.5</program-used>
+        <date>2.6.2025</date>
+        <id>cb597ab2-f4c7-41a6-b3e4-db7b6edbb009</id>
+        <version>1.0</version>
+    </document-info>
+    <publish-info>
+    </publish-info>
+</description>
+<body>
+<section>
+<p>The world created by Aja</p>
+<empty-line/>
+<p>Author: Sofia Basista</p>
+<p>Translated to English by: Arsenii Malevskyi</p>
+<empty-line/>
+<p>In one quite city lived a girl called Aja, who liked to paint a lot. One day, during a walk in the park Aja found an old album. She opened it and saw that the pages are blank. Aja decided to draw a forest in it.</p>
+<p>When she finished, the forest immediately became real. From the album elves escaped and asked Aja to join them in their magical world. There she spent the whole day in games. In the evening, when the elves sent Aja back home, she promised that she will return to them in her drawings often.</p>
+<p>She often drew new worlds and heroes in her album. Every time, when she finished,  it became real. This way she became friends with dragons, unicorns and other magical creatures.</p>
+<p>Aja understood that her drawings aren’t just drawings but real portals to different dimensions. She started to travel through her drawings, learning new things.</p>
+</section>
+</body>
+
+</FictionBook>
