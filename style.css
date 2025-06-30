@@ -58,3 +58,6 @@ img:hover, img:onclick{
  width: fit-content;
  height: auto;
 }
+.img{
+  background-image: url(Props/amazinglife.webp);
+}
