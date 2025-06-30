@@ -12,10 +12,7 @@
     <loc>https://arsenii201.github.io/webpage/Html/fairy.html</loc>
     <priority>0.99</priority>
   </url>
-      <url>
-    <loc>https://arsenii201.github.io/webpage/Html/aja.html</loc>
-    <priority>0.97</priority>
-  </url>
+
       <url>
     <loc>https://arsenii201.github.io/webpage/Html/ajabook.html</loc>
     <priority>0.98</priority>
@@ -28,8 +25,5 @@
     <loc>https://arsenii201.github.io/webpage/Html/Amazinglife.html</loc>
     <priority>0.98</priority>
   </url>
-      <url>
-    <loc>https://arsenii201.github.io/webpage/Html/read_online_life.html</loc>
-    <priority>0.99</priority>
-  </url>
+
 </urlset>
