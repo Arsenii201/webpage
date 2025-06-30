@@ -23,6 +23,13 @@
         display: flex;
       }
     </style>
+    <script>
+      function comment(){
+        let a = document.getElementById('comment');
+        let b = prompt();
+        a.innerHTML('<ul><li>b</li</ul>');
+      }
+    </script>
   </head>
   <body>
     <h1 id="m" class="img" style="background-image: url(../Props/amazinglife.webp); height: 50vh; background-repeat: no-repeat; background-size: cover; color: grey;">
@@ -51,9 +58,11 @@
     <div class="footer">
      <div class="comment">
       <h5>
-        leave a comment
-        
+      <button onclick="comment">  leave a comment</button>
       </h5>
+     </div>
+     <div id="comment">
+
      </div>
     </div>
 
