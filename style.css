@@ -59,5 +59,5 @@ img:hover, img:onclick{
  height: auto;
 }
 .img{
-  background-image: url(Props/amazinglife.webp);
+  background-image: url(/Props/amazinglife.webp);
 }
