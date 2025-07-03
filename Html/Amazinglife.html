@@ -30,7 +30,11 @@
       .download{
         width: 60vw;
       }
-
+      @media only screen and (max-width: 600px) {
+        .leftcolumn, .rightcolumn{
+          width: 100vw;
+        }
+      }
       #close{
         font-style: normal;
       
@@ -61,24 +65,8 @@
   color: black;           /* keep black on hover */
   text-decoration: none;  /* still no underline */
 }
-      a {
-  color: black;
-  text-decoration: none;
-}
-@media screen and (max-width: 768px) {
-  /* Remove margin, padding, and border from all elements */
-  * {
-    border: none !important;
-  }
+  
 
-  /* Reset layout-specific styles */
-  * {
-    display: block;
-  flex: none !important;
-    grid: none !important;
-    box-sizing: border-box;
-  }
-}
     </style>  
     <!--<script>
       function comment(){
