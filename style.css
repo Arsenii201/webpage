@@ -66,11 +66,12 @@ img:hover, img:onclick{
   left: 1;
   background-color: greenyellow;
   align-content: center;
+  width: 100vw;
 }
 .header nav a{
   display: inline-block;
   background-color: aquamarine;
   border: 2px solid black;
-  
+
 } 
 
