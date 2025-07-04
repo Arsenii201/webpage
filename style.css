@@ -67,7 +67,7 @@ img:hover, img:onclick{
   background-color: greenyellow;
   align-content: center;
 }
-.header a{
+.header nav a{
   display: block;
   background-color: aquamarine;
   border: 2px solid black;
