@@ -59,7 +59,7 @@ img:hover, img:onclick{
  height: auto;
 }
 .header{
-  display: flex;
+  display: flexbox;
   position: fixed;
   top: 0;
   bottom: 1;
