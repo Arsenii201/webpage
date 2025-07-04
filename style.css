@@ -68,7 +68,7 @@ img:hover, img:onclick{
   align-content: center;
 }
 .header nav a{
-  display: block;
+  display: inline-block;
   background-color: aquamarine;
   border: 2px solid black;
 } 
