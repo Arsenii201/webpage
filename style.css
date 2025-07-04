@@ -72,5 +72,6 @@ img:hover, img:onclick{
   display: inline-block;
   background-color: aquamarine;
   border: 2px solid black;
+  margin: 5px;
 } 
 
