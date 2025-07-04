@@ -58,4 +58,7 @@ img:hover, img:onclick{
  width: fit-content;
  height: auto;
 }
-
+.header{
+  position: fixed;
+  top: 1;
+}
