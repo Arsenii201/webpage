@@ -61,5 +61,7 @@ img:hover, img:onclick{
 .header{
   position: fixed;
   top: 1;
-  
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
