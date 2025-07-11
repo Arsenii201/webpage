@@ -69,7 +69,7 @@ img:hover, img:onclick{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  max-height: 100px;
+  max-height: min-content;
 }
 .header nav a{
   display: inline-block;
