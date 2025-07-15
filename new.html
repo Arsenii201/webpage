@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Library</title>
+  <link rel="icon" type="image/x-icon" href="Props/book-stack-128.ico" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #fff9e6;
+      color: #5a4d00;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #f7d358;
+      color: #5a4d00;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .search-container {
+      margin-top: 15px;
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin-inline: auto;
+    }
+
+    #searchBar {
+      width: 100%;
+      padding: 8px 40px 8px 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      background-color: #fff7cc;
+      color: #5a4d00;
+      box-shadow: inset 0 0 5px #f0db70;
+      transition: box-shadow 0.3s ease;
+    }
+
+    #searchBar:focus {
+      outline: none;
+      box-shadow: 0 0 8px 2px #f7d358cc;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      fill: #5a4d00;
+      opacity: 0.7;
+    }
+
+    #searchHints {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff7cc;
+      border: 1px solid #f0db70;
+      border-top: none;
+      z-index: 10;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+      box-shadow: 0 4px 6px rgba(90, 77, 0, 0.1);
+      border-radius: 0 0 6px 6px;
+    }
+
+    #searchHints div {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    #searchHints div:hover {
+      background-color: #fef2a4;
+    }
+
+    #filterDropdown, #ageDropdown {
+      margin-top: 12px;
+      width: 100%;
+      padding: 8px 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      background-color: #fff7cc;
+      color: #5a4d00;
+      box-shadow: inset 0 0 4px #f0db70;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff7cc;
+      padding: 10px 16px;
+      position: relative;
+    }
+
+    .nav-brand {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #5a4d00;
+    }
+
+    .nav-toggle {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #5a4d00;
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #a68400;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff7cc;
+        display: none;
+        padding: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 20px 16px;
+      margin: auto;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    section {
+      background-color: #fffdf3;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 0 6px rgba(90, 77, 0, 0.08);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    section:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      margin-top: 18px;
+      color: #a68400;
+    }
+
+    h6 {
+      font-size: 0.95em;
+      color: #5a4d00;
+      margin: 6px 0;
+    }
+
+    .age {
+      font-size: 0.85em;
+      margin: 4px 0 8px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 7px 14px;
+      background-color: #f7d358;
+      color: #5a4d00;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 5px rgba(167, 132, 0, 0.4);
+    }
+
+    a.button:hover {
+      background-color: #d6b842;
+      box-shadow: 0 0 12px 2px #f7d358cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Online Library 📚</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search books by title..." autocomplete="off" />
+      <div id="searchHints"></div>
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 110-8 4 4 0 010 8z"/>
+      </svg>
+      <select id="filterDropdown">
+        <option value="all">All Categories</option>
+        <option value="cats">Books About Cats</option>
+        <option value="fairytales">Fairytales</option>
+      </select>
+      <select id="ageDropdown">
+        <option value="all">All Ages</option>
+        <option value="7+">7+</option>
+        <option value="10+">10+</option>
+        <option value="12+">12+</option>
+      </select>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-brand">📚 Library</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links">
+      <a href="#cats">Books About Cats</a>
+      <a href="#fairytales">Fairytales</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="grid-container">
+      <section id="cats" data-title="Books About Cats" data-age="7+" data-category="cats">
+        <img src="Props/cats.webp" alt="Photo of a cat named Lapa" />
+        <h3>Books About Cats</h3>
+        <h6>Stories about Lapa the cat and his feline friends in a cozy village</h6>
+        <p class="age">Recommended Age: 7+</p>
+        <a class="button" href="Html/catbooks.html">Click here to view</a>
+      </section>
+
+      <section id="fairytales" data-title="Magical Fairytales" data-age="7+" data-category="fairytales">
+        <img src="Props/aja1.jpg" alt="Aja the girl walking between dreams" />
+        <h3>Magical Fairytales</h3>
+        <h6>Enter enchanted worlds full of wonder, perfect for children and dreamers</h6>
+        <p class="age">Recommended Age: 7+</p>
+        <a class="button" href="Html/fairy.html">Click here to view</a>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    const searchHints = document.getElementById('searchHints');
+    const filterDropdown = document.getElementById('filterDropdown');
+    const ageDropdown = document.getElementById('ageDropdown');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const sections = document.querySelectorAll('section');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    const books = Array.from(sections).map(sec => ({
+      id: sec.id,
+      title: sec.dataset.title,
+      category: sec.dataset.category,
+      age: sec.dataset.age
+    }));
+
+    function updateDisplay() {
+      const query = searchBar.value.toLowerCase();
+      const filter = filterDropdown.value;
+      const age = ageDropdown.value;
+
+      searchHints.innerHTML = '';
+      searchHints.style.display = 'none';
+
+      sections.forEach(sec => {
+        const title = sec.dataset.title.toLowerCase();
+        const matchesSearch = title.includes(query);
+        const matchesFilter = (filter === "all" || sec.dataset.category === filter);
+        const matchesAge = (age === "all" || sec.dataset.age === age);
+
+        sec.style.display = (matchesSearch && matchesFilter && matchesAge) ? '' : 'none';
+      });
+
+      if (query) {
+        const matches = books.filter(b =>
+          b.title.toLowerCase().includes(query) &&
+          (filter === "all" || b.category === filter) &&
+          (age === "all" || b.age === age)
+        );
+        if (matches.length > 0) {
+          matches.forEach(b => {
+            const div = document.createElement('div');
+            div.textContent = b.title;
+            div.onclick = () => {
+              location.hash = '#' + b.id;
+              searchBar.value = b.title;
+              searchHints.innerHTML = '';
+              searchHints.style.display = 'none';
+            };
+            searchHints.appendChild(div);
+          });
+          searchHints.style.display = 'block';
+        }
+      }
+    }
+
+    searchBar.addEventListener('input', updateDisplay);
+    filterDropdown.addEventListener('change', updateDisplay);
+    ageDropdown.addEventListener('change', updateDisplay);
+
+    document.addEventListener('click', e => {
+      if (!searchBar.contains(e.target) && !searchHints.contains(e.target)) {
+        searchHints.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
