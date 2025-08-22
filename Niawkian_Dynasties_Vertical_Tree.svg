@@ -1,0 +1,526 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2389" height="8882" viewBox="0 0 2389 8882">
+<defs>
+<style><![CDATA[.box{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:13px;fill:#111}.title{font-weight:700} .legend{font-size:13px}]]></style>
+</defs>
+<rect x="0" y="0" width="2389" height="8882" fill="#ffffff"/>
+<text x="90" y="40" class="title" font-size="22">Niawkian Dynasties — Vertical Family Tree (clarified)</text>
+<text x="90" y="64" class="box">Solid lines = father→son · Dashed = dynasty claim/change · Dotted = marriage/personal union</text>
+<path d="M848.0,152 V181.0 H848.0 V210" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M848.0,282 V311.0 H848.0 V340" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M848.0,412 V441.0 H848.0 V470" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,672 V701.0 H1196.0 V730" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,802 V831.0 H1196.0 V860" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,932 V961.0 H1196.0 V990" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,1062 V1091.0 H326.00000000000006 V1120" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1192 V1221.0 H326.00000000000006 V1250" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1322 V1351.0 H326.00000000000006 V1380" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1452 V1481.0 H326.00000000000006 V1510" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1582 V1611.0 H326.00000000000006 V1640" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1712 V1741.0 H326.00000000000006 V1770" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1842 V1871.0 H326.00000000000006 V1900" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,1972 V2001.0 H326.00000000000006 V2030" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,2102 V2131.0 H326.00000000000006 V2160" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,2232 V2261.0 H326.00000000000006 V2290" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,2362 V2391.0 H326.00000000000006 V2420" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,1062 V1091.0 H1486.0 V1120" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1486.0,1192 V1221.0 H1486.0 V1250" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1486.0,1322 V1351.0 H1486.0 V1380" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1486.0,1452 V1481.0 H1312.0 V1510" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,1582 V1611.0 H1312.0 V1640" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,1712 V1741.0 H1312.0 V1770" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,1842 V1871.0 H1312.0 V1900" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,1972 V2001.0 H1312.0 V2030" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,2102 V2131.0 H1631.0 V2160" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1631.0,2232 V2261.0 H1631.0 V2290" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1312.0,2492 V2521.0 H1138.0 V2550" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1138.0,2622 V2651.0 H1138.0 V2680" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1138.0,2752 V2781.0 H1138.0 V2810" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1138.0,2882 V2911.0 H877.0000000000001 V2940" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3012 V3041.0 H877.0000000000001 V3070" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1138.0,2882 V2911.0 H1196.0 V2940" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,3012 V3041.0 H1196.0 V3070" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1196.0,3142 V3171.0 H1051.0 V3200" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1051.0,3272 V3301.0 H877.0000000000001 V3330" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3402 V3431.0 H877.0000000000001 V3460" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3532 V3561.0 H877.0000000000001 V3590" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1051.0,3272 V3301.0 H1515.0 V3330" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1515.0,3402 V3431.0 H1515.0 V3460" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3662 V3691.0 H877.0000000000001 V3720" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3792 V3821.0 H877.0000000000001 V3850" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3922 V3951.0 H877.0000000000001 V3980" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,4052 V4081.0 H877.0000000000001 V4110" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,4182 V4211.0 H877.0000000000001 V4240" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,4312 V4341.0 H877.0000000000001 V4370" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M877.0000000000001,3792 V3821.0 H1109.0 V3850" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1109.0,3922 V4211.0 H1109.0 V4500" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1109.0,4572 V4666.0 H326.00000000000006 V4760" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,4832 V4861.0 H326.00000000000006 V4890" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,4962 V4991.0 H326.00000000000006 V5020" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,5092 V5121.0 H326.00000000000006 V5150" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,5222 V5251.0 H326.00000000000006 V5280" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,5352 V5381.0 H326.00000000000006 V5410" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,5482 V5511.0 H326.00000000000006 V5540" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M326.00000000000006,5612 V5641.0 H935.0 V5670" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,5742 V5771.0 H935.0 V5800" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,5872 V5901.0 H935.0 V5930" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6002 V6031.0 H935.0 V6060" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6132 V6161.0 H935.0 V6190" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6262 V6291.0 H935.0 V6320" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6392 V6421.0 H935.0 V6450" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6522 V6551.0 H935.0 V6580" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6652 V6681.0 H935.0 V6710" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1109.0,4572 V4666.0 H1660.0 V4760" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1660.0,4832 V4861.0 H1660.0 V4890" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1660.0,4962 V4991.0 H1660.0 V5020" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1660.0,5092 V5121.0 H1660.0 V5150" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,6262 V6226.0 H1979.0 V6190" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6262 V6291.0 H1979.0 V6320" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6392 V6421.0 H1979.0 V6450" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6522 V6551.0 H1979.0 V6580" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6652 V6681.0 H1979.0 V6710" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6782 V6811.0 H1979.0 V6840" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,6912 V6941.0 H1979.0 V6970" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,7042 V7071.0 H1979.0 V7100" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,7172 V7201.0 H1979.0 V7230" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1979.0,7302 V7331.0 H935.0 V7360" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,7432 V7461.0 H935.0 V7490" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,7562 V7591.0 H790.0 V7620" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M790.0,7692 V7721.0 H790.0 V7750" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M790.0,7822 V7851.0 H790.0 V7880" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M790.0,7952 V7981.0 H790.0 V8010" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,7562 V7526.0 H210.0 V7490" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,7562 V7591.0 H210.0 V7620" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,7562 V7656.0 H210.0 V7750" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,7822 V7851.0 H210.0 V7880" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,7952 V7981.0 H210.0 V8010" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,8082 V8111.0 H210.0 V8140" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,7822 V7851.0 H587.0 V7880" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M587.0,7952 V7981.0 H587.0 V8010" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M587.0,8082 V8111.0 H587.0 V8140" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M587.0,8212 V8241.0 H587.0 V8270" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M587.0,8342 V8371.0 H587.0 V8400" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M210.0,7822 V7851.0 H1370.0 V7880" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1370.0,7952 V7981.0 H1370.0 V8010" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1370.0,7952 V8046.0 H1370.0 V8140" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M935.0,7562 V7526.0 H1283.0 V7490" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1283.0,7562 V7591.0 H1283.0 V7620" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1283.0,7692 V7721.0 H1283.0 V7750" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1283.0,7822 V7851.0 H1283.0 V7880" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M1283.0,7952 V7981.0 H1283.0 V8010" stroke="#444" stroke-width="2.1" fill="none"/>
+<path d="M848.0,542 C848.0,571.0 1196.0,571.0 1196.0,600" stroke="#8e8e8e" stroke-width="2" stroke-dasharray="6,5" fill="none"/>
+<path d="M1631.0,2362 C1631.0,2391.0 1312.0,2391.0 1312.0,2420" stroke="#8e8e8e" stroke-width="2" stroke-dasharray="6,5" fill="none"/>
+<path d="M1432.0,1936.0 H1511.0" stroke="#999" stroke-width="2" stroke-dasharray="2,6" fill="none"/>
+<rect x="728.0" y="80" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="738.0" y="103" class="box">Bob I "The Conqueror"</text>
+<text x="738.0" y="119" class="box">(351–340 BCE)</text>
+<rect x="728.0" y="210" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="738.0" y="233" class="box">Ted I</text>
+<text x="738.0" y="249" class="box">(340–325)</text>
+<rect x="728.0" y="340" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="738.0" y="363" class="box">Bob II</text>
+<text x="738.0" y="379" class="box">(325–310)</text>
+<rect x="728.0" y="470" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="738.0" y="493" class="box">Luis I</text>
+<text x="738.0" y="509" class="box">(310–295)</text>
+<rect x="1076.0" y="600" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="623" class="box">Philip I</text>
+<text x="1086.0" y="639" class="box">(290–281)</text>
+<text x="1086.0" y="655" class="box">Claimed grandson via Haw</text>
+<rect x="1076.0" y="730" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="753" class="box">Haw I</text>
+<text x="1086.0" y="769" class="box">(281–270)</text>
+<rect x="1076.0" y="860" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="883" class="box">Bob III</text>
+<text x="1086.0" y="899" class="box">(270–265)</text>
+<rect x="1076.0" y="990" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="1013" class="box">Ted II</text>
+<text x="1086.0" y="1029" class="box">(265–260)</text>
+<rect x="206.00000000000006" y="1120" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1143" class="box">Ted III</text>
+<text x="216.00000000000006" y="1159" class="box">(260–252)</text>
+<rect x="206.00000000000006" y="1250" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1273" class="box">Luis II</text>
+<text x="216.00000000000006" y="1289" class="box">(252–249)</text>
+<rect x="206.00000000000006" y="1380" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1403" class="box">Robert I</text>
+<text x="216.00000000000006" y="1419" class="box">(249–240)</text>
+<text x="216.00000000000006" y="1435" class="box">Lost to birds</text>
+<rect x="206.00000000000006" y="1510" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1533" class="box">Robert II</text>
+<text x="216.00000000000006" y="1549" class="box">(240–231)</text>
+<rect x="206.00000000000006" y="1640" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1663" class="box">Paul I</text>
+<text x="216.00000000000006" y="1679" class="box">(222–201)</text>
+<rect x="206.00000000000006" y="1770" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1793" class="box">Edward I (Ports)</text>
+<text x="216.00000000000006" y="1809" class="box">(201–185)</text>
+<rect x="206.00000000000006" y="1900" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="1923" class="box">Paul II</text>
+<text x="216.00000000000006" y="1939" class="box">(185–171)</text>
+<text x="216.00000000000006" y="1955" class="box">Only daughters</text>
+<rect x="206.00000000000006" y="2030" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="2053" class="box">Elizabeth</text>
+<text x="216.00000000000006" y="2069" class="box">(elder)</text>
+<text x="216.00000000000006" y="2085" class="box">→ m. Prince Harry of Puerto</text>
+<rect x="206.00000000000006" y="2160" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="2183" class="box">Pablo I</text>
+<text x="216.00000000000006" y="2199" class="box">(152–130)</text>
+<rect x="206.00000000000006" y="2290" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="2313" class="box">Pedro I</text>
+<text x="216.00000000000006" y="2329" class="box">(130–121)</text>
+<rect x="206.00000000000006" y="2420" rx="8" ry="8" width="240" height="72" fill="#6BCB77" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="2443" class="box">Harry II</text>
+<text x="216.00000000000006" y="2459" class="box">(121–115)</text>
+<text x="216.00000000000006" y="2475" class="box">Male line extinct</text>
+<rect x="1366.0" y="1120" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1376.0" y="1143" class="box">Haw II</text>
+<text x="1376.0" y="1159" class="box">(255–250)</text>
+<text x="1376.0" y="1175" class="box">→ Hawhawkid</text>
+<rect x="1366.0" y="1250" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1376.0" y="1273" class="box">Ferdinand I</text>
+<text x="1376.0" y="1289" class="box">(250–241)</text>
+<rect x="1366.0" y="1380" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1376.0" y="1403" class="box">Ferdinand II</text>
+<text x="1376.0" y="1419" class="box">(241–230)</text>
+<text x="1376.0" y="1435" class="box">East→Republic</text>
+<rect x="1192.0" y="1510" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="1533" class="box">Henry I, Duke of Triangle</text>
+<text x="1202.0" y="1549" class="box">(187–170)</text>
+<rect x="1192.0" y="1640" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="1663" class="box">Barkus I</text>
+<text x="1202.0" y="1679" class="box">(170–155)</text>
+<rect x="1192.0" y="1770" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="1793" class="box">Krant I</text>
+<text x="1202.0" y="1809" class="box">(155–143)</text>
+<rect x="1192.0" y="1900" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="1923" class="box">Henry II</text>
+<text x="1202.0" y="1939" class="box">(143–129)</text>
+<text x="1202.0" y="1955" class="box">× Ann of Port</text>
+<rect x="1192.0" y="2030" rx="8" ry="8" width="240" height="72" fill="#FFA500" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="2053" class="box">Harry I</text>
+<text x="1202.0" y="2069" class="box">(129–111)</text>
+<rect x="1511.0" y="2160" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1521.0" y="2183" class="box">Henry III (Port)</text>
+<text x="1521.0" y="2199" class="box">(110–105)</text>
+<rect x="1511.0" y="2290" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1521.0" y="2313" class="box">Edward II (Port)</text>
+<text x="1521.0" y="2329" class="box">(dates unk.)</text>
+<rect x="1192.0" y="2420" rx="8" ry="8" width="240" height="72" fill="#B3A1FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1202.0" y="2443" class="box">Duchess</text>
+<text x="1202.0" y="2459" class="box">(103–90)</text>
+<text x="1202.0" y="2475" class="box">× Edward II</text>
+<rect x="1018.0" y="2550" rx="8" ry="8" width="240" height="72" fill="#8888FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1028.0" y="2573" class="box">Edward III</text>
+<text x="1028.0" y="2589" class="box">(90–71)</text>
+<rect x="1018.0" y="2680" rx="8" ry="8" width="240" height="72" fill="#8888FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1028.0" y="2703" class="box">Pablo</text>
+<text x="1028.0" y="2719" class="box">(71–54)</text>
+<rect x="1018.0" y="2810" rx="8" ry="8" width="240" height="72" fill="#8888FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1028.0" y="2833" class="box">Sanchez</text>
+<text x="1028.0" y="2849" class="box">(54–42)</text>
+<text x="1028.0" y="2865" class="box">Splits Triangle/Port</text>
+<rect x="757.0000000000001" y="2940" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="2963" class="box">Sanchez (Triangle)</text>
+<text x="767.0000000000001" y="2979" class="box">(42–29)</text>
+<rect x="757.0000000000001" y="3070" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3093" class="box">Pedro</text>
+<text x="767.0000000000001" y="3109" class="box">(29–15)</text>
+<text x="767.0000000000001" y="3125" class="box">No male heirs</text>
+<rect x="1076.0" y="2940" rx="8" ry="8" width="240" height="72" fill="#8888FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="2963" class="box">Andreas</text>
+<text x="1086.0" y="2979" class="box">(42–33)</text>
+<rect x="1076.0" y="3070" rx="8" ry="8" width="240" height="72" fill="#8888FF" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1086.0" y="3093" class="box">Barkus</text>
+<text x="1086.0" y="3109" class="box">(33–12)</text>
+<rect x="931.0000000000001" y="3200" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="941.0000000000001" y="3223" class="box">Bob (restorer)</text>
+<text x="941.0000000000001" y="3239" class="box">12 BCE–10 CE</text>
+<text x="941.0000000000001" y="3255" class="box">Duke of Triangle</text>
+<rect x="757.0000000000001" y="3330" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3353" class="box">Barkus</text>
+<text x="767.0000000000001" y="3369" class="box">(10–29)</text>
+<rect x="757.0000000000001" y="3460" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3483" class="box">Bob</text>
+<text x="767.0000000000001" y="3499" class="box">(29–41)</text>
+<rect x="757.0000000000001" y="3590" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3613" class="box">Ted III</text>
+<text x="767.0000000000001" y="3629" class="box">(41–53)</text>
+<text x="767.0000000000001" y="3645" class="box">× Ted I’s dau. (Port)</text>
+<rect x="1395.0" y="3330" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1405.0" y="3353" class="box">Bob (Port)</text>
+<text x="1405.0" y="3369" class="box">(10–21)</text>
+<rect x="1395.0" y="3460" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1405.0" y="3483" class="box">Ted I (Port)</text>
+<text x="1405.0" y="3499" class="box">(21–35)</text>
+<text x="1405.0" y="3515" class="box">No male heirs</text>
+<rect x="757.0000000000001" y="3720" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3743" class="box">Ted IV</text>
+<text x="767.0000000000001" y="3759" class="box">(53–71)</text>
+<rect x="757.0000000000001" y="3850" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="3873" class="box">Bob III</text>
+<text x="767.0000000000001" y="3889" class="box">(71–85)</text>
+<rect x="757.0000000000001" y="3980" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="4003" class="box">Bob IV</text>
+<text x="767.0000000000001" y="4019" class="box">(85–99)</text>
+<rect x="757.0000000000001" y="4110" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="4133" class="box">Ted V</text>
+<text x="767.0000000000001" y="4149" class="box">(99–111)</text>
+<rect x="757.0000000000001" y="4240" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="4263" class="box">Sanchez III</text>
+<text x="767.0000000000001" y="4279" class="box">(111–134)</text>
+<rect x="757.0000000000001" y="4370" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="767.0000000000001" y="4393" class="box">Pablo II</text>
+<text x="767.0000000000001" y="4409" class="box">(134–145)</text>
+<rect x="989.0" y="3850" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="999.0" y="3873" class="box">Bob "Lackland"</text>
+<text x="999.0" y="3889" class="box">(71–?)</text>
+<rect x="989.0" y="4500" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="999.0" y="4523" class="box">Edward I</text>
+<text x="999.0" y="4539" class="box">(Emperor)</text>
+<text x="999.0" y="4555" class="box">Won civil war; died in battle</text>
+<rect x="206.00000000000006" y="4630" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="4653" class="box">WEST BRANCH</text>
+<rect x="206.00000000000006" y="4760" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="4783" class="box">Edward II (West)</text>
+<text x="216.00000000000006" y="4799" class="box">(150–165)</text>
+<text x="216.00000000000006" y="4815" class="box">Niawkian Union</text>
+<rect x="206.00000000000006" y="4890" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="4913" class="box">Bob VI (West)</text>
+<text x="216.00000000000006" y="4929" class="box">(165–171)</text>
+<rect x="206.00000000000006" y="5020" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="5043" class="box">Ted V (West)</text>
+<text x="216.00000000000006" y="5059" class="box">(171–192)</text>
+<text x="216.00000000000006" y="5075" class="box">Lost to Big Pier</text>
+<rect x="206.00000000000006" y="5150" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="5173" class="box">Edward III (West)</text>
+<text x="216.00000000000006" y="5189" class="box">(199–205)</text>
+<text x="216.00000000000006" y="5205" class="box">Revolution</text>
+<rect x="206.00000000000006" y="5280" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="5303" class="box">Bob VII (West)</text>
+<text x="216.00000000000006" y="5319" class="box">(215–225)</text>
+<rect x="206.00000000000006" y="5410" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="5433" class="box">Bob VIII (Emperor)</text>
+<text x="216.00000000000006" y="5449" class="box">(225–230)</text>
+<rect x="206.00000000000006" y="5540" rx="8" ry="8" width="240" height="72" fill="#9B59B6" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="216.00000000000006" y="5563" class="box">Bob VIII (King)</text>
+<text x="216.00000000000006" y="5579" class="box">(230–232)</text>
+<text x="216.00000000000006" y="5595" class="box">Deposed</text>
+<rect x="815.0" y="5670" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="5693" class="box">Ted VI</text>
+<text x="825.0" y="5709" class="box">(232–245)</text>
+<text x="825.0" y="5725" class="box">Dogs proclaim King</text>
+<rect x="815.0" y="5800" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="5823" class="box">Bob the Great</text>
+<text x="825.0" y="5839" class="box">(245–261)</text>
+<text x="825.0" y="5855" class="box">Asparuhovo War II</text>
+<rect x="815.0" y="5930" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="5953" class="box">Bob IX</text>
+<text x="825.0" y="5969" class="box">(261–265)</text>
+<text x="825.0" y="5985" class="box">Lost War II</text>
+<rect x="815.0" y="6060" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6083" class="box">Ted VII</text>
+<text x="825.0" y="6099" class="box">(265–282)</text>
+<rect x="815.0" y="6190" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6213" class="box">Edward IV</text>
+<text x="825.0" y="6229" class="box">(282–291)</text>
+<text x="825.0" y="6245" class="box">× Matilda of Port</text>
+<rect x="815.0" y="6320" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6343" class="box">Robert I “Destroyer”</text>
+<text x="825.0" y="6359" class="box">(291–305)</text>
+<text x="825.0" y="6375" class="box">Seagull Empire destroyed</text>
+<rect x="815.0" y="6450" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6473" class="box">Bob X</text>
+<text x="825.0" y="6489" class="box">(305–313)</text>
+<text x="825.0" y="6505" class="box">Lost to Cats</text>
+<rect x="815.0" y="6580" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6603" class="box">Robert II</text>
+<text x="825.0" y="6619" class="box">(313–334)</text>
+<text x="825.0" y="6635" class="box">(grandson via female)</text>
+<rect x="815.0" y="6710" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="6733" class="box">Robert III</text>
+<text x="825.0" y="6749" class="box">(334–351)</text>
+<rect x="1540.0" y="4630" rx="8" ry="8" width="240" height="72" fill="#E74C3C" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1550.0" y="4653" class="box">EAST BRANCH</text>
+<rect x="1540.0" y="4760" rx="8" ry="8" width="240" height="72" fill="#E74C3C" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1550.0" y="4783" class="box">Bob VI (East)</text>
+<text x="1550.0" y="4799" class="box">(150–174)</text>
+<rect x="1540.0" y="4890" rx="8" ry="8" width="240" height="72" fill="#E74C3C" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1550.0" y="4913" class="box">Pedro II (East)</text>
+<text x="1550.0" y="4929" class="box">(174–193)</text>
+<rect x="1540.0" y="5020" rx="8" ry="8" width="240" height="72" fill="#E74C3C" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1550.0" y="5043" class="box">Edward II (East)</text>
+<text x="1550.0" y="5059" class="box">(193–203)</text>
+<rect x="1540.0" y="5150" rx="8" ry="8" width="240" height="72" fill="#E74C3C" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1550.0" y="5173" class="box">Edward III (East)</text>
+<text x="1550.0" y="5189" class="box">(203–215)</text>
+<text x="1550.0" y="5205" class="box">Niawkian Emperor 209–215</text>
+<rect x="1859.0" y="6190" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6213" class="box">John I (Port)</text>
+<text x="1869.0" y="6229" class="box">(280–296)</text>
+<rect x="1859.0" y="6320" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6343" class="box">Pedro III</text>
+<text x="1869.0" y="6359" class="box">(296–305)</text>
+<rect x="1859.0" y="6450" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6473" class="box">Pablo IV</text>
+<text x="1869.0" y="6489" class="box">(305–329)</text>
+<text x="1869.0" y="6505" class="box">Lost Puerto</text>
+<rect x="1859.0" y="6580" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6603" class="box">Pedro IV</text>
+<text x="1869.0" y="6619" class="box">(329–337)</text>
+<rect x="1859.0" y="6710" rx="8" ry="8" width="240" height="72" fill="#2ECC71" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6733" class="box">Pablo V</text>
+<text x="1869.0" y="6749" class="box">(337–355)</text>
+<rect x="1859.0" y="6840" rx="8" ry="8" width="240" height="72" fill="#16A085" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6863" class="box">Elizabeth I (Continent)</text>
+<text x="1869.0" y="6879" class="box">(351–370+)</text>
+<text x="1869.0" y="6895" class="box">Port 355–361</text>
+<rect x="1859.0" y="6970" rx="8" ry="8" width="240" height="72" fill="#16A085" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="6993" class="box">John II</text>
+<text x="1869.0" y="7009" class="box">(370–391)</text>
+<rect x="1859.0" y="7100" rx="8" ry="8" width="240" height="72" fill="#16A085" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="7123" class="box">Pablo VI</text>
+<text x="1869.0" y="7139" class="box">(391–402)</text>
+<rect x="1859.0" y="7230" rx="8" ry="8" width="240" height="72" fill="#16A085" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1869.0" y="7253" class="box">Bob XI</text>
+<text x="1869.0" y="7269" class="box">(402–413)</text>
+<text x="1869.0" y="7285" class="box">Defeated Cats</text>
+<rect x="815.0" y="7360" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="7383" class="box">Ted VIII</text>
+<text x="825.0" y="7399" class="box">(413–425)</text>
+<rect x="815.0" y="7490" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="825.0" y="7513" class="box">Robert IV</text>
+<text x="825.0" y="7529" class="box">(425–450)</text>
+<text x="825.0" y="7545" class="box">Galata 444–450; Park 446–450</text>
+<rect x="670.0" y="7620" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="680.0" y="7643" class="box">Bob XII</text>
+<text x="680.0" y="7659" class="box">(450–483)</text>
+<text x="680.0" y="7675" class="box">Asparuhovo</text>
+<rect x="670.0" y="7750" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="680.0" y="7773" class="box">Robert V</text>
+<text x="680.0" y="7789" class="box">(483–495)</text>
+<text x="680.0" y="7805" class="box">Asparuhovo</text>
+<rect x="670.0" y="7880" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="680.0" y="7903" class="box">Bob XIII</text>
+<text x="680.0" y="7919" class="box">(495–515)</text>
+<text x="680.0" y="7935" class="box">Asparuhovo</text>
+<rect x="670.0" y="8010" rx="8" ry="8" width="240" height="72" fill="#4F8EF7" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="680.0" y="8033" class="box">Ted IX</text>
+<text x="680.0" y="8049" class="box">(515–now)</text>
+<text x="680.0" y="8065" class="box">Asparuhovo</text>
+<rect x="90.0" y="7490" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="7513" class="box">John III</text>
+<text x="100.0" y="7529" class="box">(413–433)</text>
+<text x="100.0" y="7545" class="box">Galata</text>
+<rect x="90.0" y="7620" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="7643" class="box">Pablo V</text>
+<text x="100.0" y="7659" class="box">(433–444)</text>
+<text x="100.0" y="7675" class="box">Galata (no sons)</text>
+<rect x="90.0" y="7750" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="7773" class="box">Pedro V</text>
+<text x="100.0" y="7789" class="box">(450–461)</text>
+<text x="100.0" y="7805" class="box">Galata</text>
+<rect x="90.0" y="7880" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="7903" class="box">Krant II</text>
+<text x="100.0" y="7919" class="box">(461–485)</text>
+<text x="100.0" y="7935" class="box">Upper Galata</text>
+<rect x="90.0" y="8010" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="8033" class="box">Barkus I</text>
+<text x="100.0" y="8049" class="box">(485–501)</text>
+<text x="100.0" y="8065" class="box">Upper Galata</text>
+<rect x="90.0" y="8140" rx="8" ry="8" width="240" height="72" fill="#2980B9" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="100.0" y="8163" class="box">Black I</text>
+<text x="100.0" y="8179" class="box">(501–now)</text>
+<text x="100.0" y="8195" class="box">Upper Galata</text>
+<rect x="467.00000000000006" y="7880" rx="8" ry="8" width="240" height="72" fill="#8E44AD" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="477.00000000000006" y="7903" class="box">Ferdinand I</text>
+<text x="477.00000000000006" y="7919" class="box">(461–475)</text>
+<text x="477.00000000000006" y="7935" class="box">Yard</text>
+<rect x="467.00000000000006" y="8010" rx="8" ry="8" width="240" height="72" fill="#8E44AD" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="477.00000000000006" y="8033" class="box">Marthin I</text>
+<text x="477.00000000000006" y="8049" class="box">(475–480; 482–495)</text>
+<text x="477.00000000000006" y="8065" class="box">Yard+Monument</text>
+<rect x="467.00000000000006" y="8140" rx="8" ry="8" width="240" height="72" fill="#8E44AD" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="477.00000000000006" y="8163" class="box">Krant I</text>
+<text x="477.00000000000006" y="8179" class="box">(495–506)</text>
+<text x="477.00000000000006" y="8195" class="box">Yard</text>
+<text x="477.00000000000006" y="8211" class="box">× Lady Rose</text>
+<rect x="467.00000000000006" y="8270" rx="8" ry="8" width="240" height="72" fill="#D35400" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="477.00000000000006" y="8293" class="box">Lady Rose of Monument</text>
+<text x="477.00000000000006" y="8309" class="box">Lost Yard → Chup II</text>
+<text x="477.00000000000006" y="8325" class="box">× Barkus II</text>
+<rect x="467.00000000000006" y="8400" rx="8" ry="8" width="240" height="72" fill="#8E44AD" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="477.00000000000006" y="8423" class="box">Barkus II</text>
+<text x="477.00000000000006" y="8439" class="box">(507–now)</text>
+<text x="477.00000000000006" y="8455" class="box">Yard (by marriage)</text>
+<rect x="1250.0" y="7880" rx="8" ry="8" width="240" height="72" fill="#D35400" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1260.0" y="7903" class="box">Ferdinand II</text>
+<text x="1260.0" y="7919" class="box">(461–477)</text>
+<text x="1260.0" y="7935" class="box">Monument</text>
+<rect x="1250.0" y="8010" rx="8" ry="8" width="240" height="72" fill="#D35400" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1260.0" y="8033" class="box">Martha of Monument</text>
+<text x="1260.0" y="8049" class="box">(m. Marthin I)</text>
+<rect x="1250.0" y="8140" rx="8" ry="8" width="240" height="72" fill="#D35400" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1260.0" y="8163" class="box">Matilda (dau.)</text>
+<text x="1260.0" y="8179" class="box">→ mother of Rose</text>
+<rect x="1163.0" y="7490" rx="8" ry="8" width="240" height="72" fill="#7F8C8D" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1173.0" y="7513" class="box">Chup I</text>
+<text x="1173.0" y="7529" class="box">(413–430)</text>
+<rect x="1163.0" y="7620" rx="8" ry="8" width="240" height="72" fill="#7F8C8D" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1173.0" y="7643" class="box">Robert II</text>
+<text x="1173.0" y="7659" class="box">(430–446)</text>
+<text x="1173.0" y="7675" class="box">(no heirs)</text>
+<rect x="1163.0" y="7750" rx="8" ry="8" width="240" height="72" fill="#7F8C8D" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1173.0" y="7773" class="box">Robert V</text>
+<text x="1173.0" y="7789" class="box">(450–476)</text>
+<rect x="1163.0" y="7880" rx="8" ry="8" width="240" height="72" fill="#7F8C8D" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1173.0" y="7903" class="box">Bob XIV</text>
+<text x="1173.0" y="7919" class="box">(474–495)</text>
+<text x="1173.0" y="7935" class="box">Lost to Cats</text>
+<rect x="1163.0" y="8010" rx="8" ry="8" width="240" height="72" fill="#7F8C8D" stroke="#222" stroke-width="1.2" opacity="0.96"/>
+<text x="1173.0" y="8033" class="box">Chup II</text>
+<text x="1173.0" y="8049" class="box">(495–now)</text>
+<text x="1173.0" y="8065" class="box">Captured Yard</text>
+<text x="1196.0" y="590" class="title" font-size="14" text-anchor="middle">Dynasty change (NOT father–son)</text>
+<text x="1138.0" y="2800" class="title" font-size="14" text-anchor="middle">Split → Triangle / Port</text>
+<text x="1109.0" y="4490" class="title" font-size="14" text-anchor="middle">Split of Edward I’s sons → WEST / EAST</text>
+<rect x="2019" y="70" width="330" height="448" fill="#f7f7f7" stroke="#ccc"/>
+<text x="2029" y="90" class="title" font-size="16">Legend</text>
+<rect x="2029" y="108" width="18" height="14" fill="#4F8EF7" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="120" class="legend">Bobikid</text>
+<rect x="2029" y="130" width="18" height="14" fill="#6BCB77" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="142" class="legend">Hawson</text>
+<rect x="2029" y="152" width="18" height="14" fill="#FFA500" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="164" class="legend">Hawhawkid</text>
+<rect x="2029" y="174" width="18" height="14" fill="#8888FF" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="186" class="legend">Unified</text>
+<rect x="2029" y="196" width="18" height="14" fill="#B3A1FF" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="208" class="legend">Union</text>
+<rect x="2029" y="218" width="18" height="14" fill="#6BCB77" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="230" class="legend">Ports</text>
+<rect x="2029" y="240" width="18" height="14" fill="#9B59B6" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="252" class="legend">West</text>
+<rect x="2029" y="262" width="18" height="14" fill="#E74C3C" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="274" class="legend">East</text>
+<rect x="2029" y="284" width="18" height="14" fill="#9B59B6" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="296" class="legend">Niawkian</text>
+<rect x="2029" y="306" width="18" height="14" fill="#2ECC71" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="318" class="legend">Port</text>
+<rect x="2029" y="328" width="18" height="14" fill="#16A085" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="340" class="legend">Continent</text>
+<rect x="2029" y="350" width="18" height="14" fill="#2980B9" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="362" class="legend">Galata</text>
+<rect x="2029" y="372" width="18" height="14" fill="#8E44AD" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="384" class="legend">Yard</text>
+<rect x="2029" y="394" width="18" height="14" fill="#D35400" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="406" class="legend">Monument</text>
+<rect x="2029" y="416" width="18" height="14" fill="#7F8C8D" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="428" class="legend">Chup</text>
+<rect x="2029" y="438" width="18" height="14" fill="#4F8EF7" stroke="#333" stroke-width="0.5"/>
+<text x="2055" y="450" class="legend">Triangle</text>
+<line x1="2029" y1="468" x2="2089" y2="468" stroke="#444" stroke-width="2.2"/>
+<text x="2099" y="472" class="legend">Father → Son</text>
+<line x1="2029" y1="490" x2="2089" y2="490" stroke="#8e8e8e" stroke-width="2" stroke-dasharray="6,5"/>
+<text x="2099" y="494" class="legend">Dynasty change / Claim</text>
+<line x1="2029" y1="512" x2="2089" y2="512" stroke="#999" stroke-width="2" stroke-dasharray="2,6"/>
+<text x="2099" y="516" class="legend">Marriage / Union</text>
+</svg>
