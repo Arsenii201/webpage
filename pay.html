@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pay</title>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+  import { getDatabase, ref, get, set, push } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyA4PLT4pUNfc5YHHXWF9ObyMSk6E4aEJ_Y",
+    authDomain: "nerf-mods-website.firebaseapp.com",
+    databaseURL: "https://nerf-mods-website-default-rtdb.firebaseio.com",
+    projectId: "nerf-mods-website",
+    storageBucket: "nerf-mods-website.firebasestorage.app",
+    messagingSenderId: "577649234387",
+    appId: "1:577649234387:web:61e2b2f40e6508146f1f26"
+  };
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    const params = new URLSearchParams(window.location.search);
+    let sum = params.get("sum");
+    let senderId = params.get("senderid");
+    let senderPassword = params.get("senderpassword");
+    let receiverId = params.get("receiverid");
+
+    const wrapper = document.querySelector(".pay-wrapper");
+
+    function createInput(id, placeholder, type="text") {
+      const inp = document.createElement("input");
+      inp.type = type;
+      inp.id = id;
+      inp.placeholder = placeholder;
+      wrapper.appendChild(inp);
+    }
+
+    if (!sum) createInput("sum", "Amount", "number");
+    if (!senderId) createInput("senderId", "Your ID");
+    if (!senderPassword) createInput("senderPassword", "Your PIN", "password");
+    if (!receiverId) createInput("receiverId", "Receiver ID");
+
+    const btn = document.createElement("button");
+    btn.textContent = "Pay";
+    wrapper.appendChild(btn);
+
+    const modal = document.createElement("div");
+    modal.style.display = "none"; // <-- hidden by default
+    modal.style.position = "fixed";
+    modal.style.top = "0"; modal.style.left = "0"; modal.style.width = "100%"; modal.style.height = "100%";
+    modal.style.background = "rgba(0,0,0,0.5)";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.zIndex = "999";
+    modal.innerHTML = `<div style="background:white;padding:20px;border-radius:10px;text-align:center;font-size:18px;font-weight:500;">💸 Payment Successful!</div>`;
+    document.body.appendChild(modal);
+
+    async function processPayment() {
+      if (!sum) sum = document.getElementById("sum").value;
+      if (!senderId) senderId = document.getElementById("senderId").value;
+      if (!senderPassword) senderPassword = document.getElementById("senderPassword").value;
+      if (!receiverId) receiverId = document.getElementById("receiverId").value;
+
+      if (!sum || !senderId || !senderPassword || !receiverId) return alert("All fields required!");
+      sum = parseInt(sum);
+      if (isNaN(sum) || sum<=0) return alert("Invalid amount!");
+
+      try {
+        const senderSnap = await get(ref(db, `accounts/${senderId}`));
+        const receiverSnap = await get(ref(db, `accounts/${receiverId}`));
+        if (!senderSnap.exists() || !receiverSnap.exists()) return alert("Sender or receiver not found!");
+
+        const sender = senderSnap.val();
+        const receiver = receiverSnap.val();
+        if (sender.pin !== senderPassword) return alert("Wrong PIN!");
+        if (sender.balance < sum) return alert("Insufficient balance!");
+
+        await set(ref(db, `accounts/${senderId}`), {...sender, balance: sender.balance-sum});
+        await set(ref(db, `accounts/${receiverId}`), {...receiver, balance: receiver.balance+sum});
+        await set(push(ref(db, "transactions")), {from: sender.name, to: receiver.name, amount: sum, timestamp: Date.now()});
+
+        modal.style.display = "flex"; // <-- show only after success
+        setTimeout(()=> window.location.href = document.referrer || "user.html", 2500);
+
+      } catch(e) {
+        console.error(e);
+        alert("Error processing payment");
+      }
+    }
+
+    btn.addEventListener("click", processPayment);
+
+    if (sum && senderId && senderPassword && receiverId) processPayment();
+  });
+</script>
+</head>
+<body>
+<div class="pay-wrapper">
+<h2>School Payment</h2>
+</div>
+</body>
+</html>

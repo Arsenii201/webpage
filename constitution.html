@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classroom Constitution</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f7f7f7; }
+    h1 { text-align: center; color: #333; }
+    select { margin-bottom: 20px; padding: 5px; font-size: 16px; }
+    section { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    table, th, td { border: 1px solid #aaa; }
+    th, td { padding: 8px; text-align: left; }
+  </style>
+</head>
+<body>
+
+  <select id="languageSelector">
+    <option value="english.js">English</option>
+    <option value="bulgarian.js">Bulgarian</option>
+    <option value="ukrainian.js">Ukrainian</option>
+  </select>
+
+  <div id="constitutionContent">Loading...</div>
+
+  <script>
+    const contentDiv = document.getElementById('constitutionContent');
+    const langSelector = document.getElementById('languageSelector');
+
+    function loadLanguageScript(file) {
+      // Remove previous language script if exists
+      const oldScript = document.getElementById('langScript');
+      if (oldScript) oldScript.remove();
+
+      // Clear previous content
+      contentDiv.innerHTML = "Loading...";
+
+      // Load new script
+      const script = document.createElement('script');
+      script.src = file;
+      script.id = 'langScript';
+      script.onload = () => {
+        // texts is defined in each JS as a string
+        if (typeof texts === "string") {
+          contentDiv.innerHTML = texts;
+        } else {
+          contentDiv.innerHTML = "<p>Content failed to load.</p>";
+        }
+      };
+      document.body.appendChild(script);
+    }
+
+    // Load default language (English)
+    loadLanguageScript(langSelector.value);
+
+    langSelector.addEventListener('change', function() {
+      loadLanguageScript(this.value);
+    });
+  </script>
+
+</body>
+</html>
