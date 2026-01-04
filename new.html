@@ -1,368 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Online Library</title>
-  <link rel="icon" type="image/x-icon" href="Props/book-stack-128.ico" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<title>Messenger POC</title>
+<style>
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      max-width: 100%;
-      overflow-x: hidden;
-      font-family: Arial, sans-serif;
-      background-color: #fff9e6;
-      color: #5a4d00;
-      scroll-behavior: smooth;
-    }
+#app {
+  width: 380px;
+  height: 620px;
+  background: #222;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
 
-    header {
-      background-color: #f7d358;
-      color: #5a4d00;
-      text-align: center;
-      padding: 30px 15px;
-    }
+input, button, select {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 4px;
+}
 
-    .search-container {
-      margin-top: 15px;
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      margin-inline: auto;
-    }
+button {
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
 
-    #searchBar {
-      width: 100%;
-      padding: 8px 40px 8px 12px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      background-color: #fff7cc;
-      color: #5a4d00;
-      box-shadow: inset 0 0 5px #f0db70;
-      transition: box-shadow 0.3s ease;
-    }
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  background: #000;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
 
-    #searchBar:focus {
-      outline: none;
-      box-shadow: 0 0 8px 2px #f7d358cc;
-    }
+.msg {
+  background: #333;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+}
 
-    .search-icon {
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      pointer-events: none;
-      fill: #5a4d00;
-      opacity: 0.7;
-    }
+.time {
+  font-size: 10px;
+  color: #aaa;
+  float: right;
+}
 
-    #searchHints {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #fff7cc;
-      border: 1px solid #f0db70;
-      border-top: none;
-      z-index: 10;
-      max-height: 150px;
-      overflow-y: auto;
-      display: none;
-      box-shadow: 0 4px 6px rgba(90, 77, 0, 0.1);
-      border-radius: 0 0 6px 6px;
-    }
+.action {
+  font-size: 11px;
+  cursor: pointer;
+  margin-left: 6px;
+}
 
-    #searchHints div {
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-
-    #searchHints div:hover {
-      background-color: #fef2a4;
-    }
-
-    #filterDropdown, #ageDropdown {
-      margin-top: 12px;
-      width: 100%;
-      padding: 8px 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      background-color: #fff7cc;
-      color: #5a4d00;
-      box-shadow: inset 0 0 4px #f0db70;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff7cc;
-      padding: 10px 16px;
-      position: relative;
-    }
-
-    .nav-brand {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #5a4d00;
-    }
-
-    .nav-toggle {
-      background: none;
-      border: none;
-      font-size: 1.5em;
-      cursor: pointer;
-      color: #5a4d00;
-      display: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 16px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #a68400;
-      font-weight: bold;
-    }
-
-    @media (max-width: 600px) {
-      .nav-toggle {
-        display: block;
-      }
-
-      .nav-links {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff7cc;
-        display: none;
-        padding: 10px;
-      }
-
-      .nav-links.show {
-        display: flex;
-      }
-    }
-
-    .container {
-      max-width: 100%;
-      padding: 20px 16px;
-      margin: auto;
-    }
-
-    .grid-container {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: 1fr;
-    }
-
-    @media (min-width: 768px) {
-      .grid-container {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    section {
-      background-color: #fffdf3;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 0 6px rgba(90, 77, 0, 0.08);
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-
-    section:nth-of-type(2) {
-      animation-delay: 0.3s;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      aspect-ratio: 3 / 2;
-      object-fit: cover;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    h3 {
-      font-size: 1.3em;
-      margin-top: 18px;
-      color: #a68400;
-    }
-
-    h6 {
-      font-size: 0.95em;
-      color: #5a4d00;
-      margin: 6px 0;
-    }
-
-    .age {
-      font-size: 0.85em;
-      margin: 4px 0 8px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 7px 14px;
-      background-color: #f7d358;
-      color: #5a4d00;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s, box-shadow 0.3s;
-      box-shadow: 0 2px 5px rgba(167, 132, 0, 0.4);
-    }
-
-    a.button:hover {
-      background-color: #d6b842;
-      box-shadow: 0 0 12px 2px #f7d358cc;
-    }
-  </style>
+.edit { color: orange; }
+.del { color: red; }
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to Your Online Library 📚</h1>
-    <div class="search-container">
-      <input type="text" id="searchBar" placeholder="Search books by title..." autocomplete="off" />
-      <div id="searchHints"></div>
-      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 110-8 4 4 0 010 8z"/>
-      </svg>
-      <select id="filterDropdown">
-        <option value="all">All Categories</option>
-        <option value="cats">Books About Cats</option>
-        <option value="fairytales">Fairytales</option>
-      </select>
-      <select id="ageDropdown">
-        <option value="all">All Ages</option>
-        <option value="7+">7+</option>
-        <option value="10+">10+</option>
-        <option value="12+">12+</option>
-      </select>
-    </div>
-  </header>
+<div id="app">
 
-  <nav class="navbar">
-    <div class="nav-brand">📚 Library</div>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links">
-      <a href="#cats">Books About Cats</a>
-      <a href="#fairytales">Fairytales</a>
-    </div>
-  </nav>
+<!-- LOGIN -->
+<div id="login">
+  <h3>Login / Register</h3>
+  <input id="user" placeholder="Username">
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <button onclick="register()">Register</button>
+</div>
 
-  <div class="container">
-    <div class="grid-container">
-      <section id="cats" data-title="Books About Cats" data-age="7+" data-category="cats">
-        <img src="Props/cats.webp" alt="Photo of a cat named Lapa" />
-        <h3>Books About Cats</h3>
-        <h6>Stories about Lapa the cat and his feline friends in a cozy village</h6>
-        <p class="age">Recommended Age: 7+</p>
-        <a class="button" href="Html/catbooks.html">Click here to view</a>
-      </section>
+<!-- CHAT -->
+<div id="chat" style="display:none;">
+  <h3 id="welcome"></h3>
 
-      <section id="fairytales" data-title="Magical Fairytales" data-age="7+" data-category="fairytales">
-        <img src="Props/aja1.jpg" alt="Aja the girl walking between dreams" />
-        <h3>Magical Fairytales</h3>
-        <h6>Enter enchanted worlds full of wonder, perfect for children and dreamers</h6>
-        <p class="age">Recommended Age: 7+</p>
-        <a class="button" href="Html/fairy.html">Click here to view</a>
-      </section>
-    </div>
-  </div>
+  <select id="room" onchange="switchRoom()">
+    <option value="general">general</option>
+    <option value="games">games</option>
+    <option value="tech">tech</option>
+  </select>
 
-  <script>
-    const searchBar = document.getElementById('searchBar');
-    const searchHints = document.getElementById('searchHints');
-    const filterDropdown = document.getElementById('filterDropdown');
-    const ageDropdown = document.getElementById('ageDropdown');
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const sections = document.querySelectorAll('section');
+  <button onclick="logout()">Logout</button>
 
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
+  <div id="messages"></div>
 
-    const books = Array.from(sections).map(sec => ({
-      id: sec.id,
-      title: sec.dataset.title,
-      category: sec.dataset.category,
-      age: sec.dataset.age
-    }));
+  <input id="text" placeholder="Message">
+  <button onclick="send()">Send</button>
+</div>
 
-    function updateDisplay() {
-      const query = searchBar.value.toLowerCase();
-      const filter = filterDropdown.value;
-      const age = ageDropdown.value;
+</div>
 
-      searchHints.innerHTML = '';
-      searchHints.style.display = 'none';
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
-      sections.forEach(sec => {
-        const title = sec.dataset.title.toLowerCase();
-        const matchesSearch = title.includes(query);
-        const matchesFilter = (filter === "all" || sec.dataset.category === filter);
-        const matchesAge = (age === "all" || sec.dataset.age === age);
+<script>
+/* ---------- FIREBASE ---------- */
+firebase.initializeApp({
+  apiKey: "AIzaSyCHA0x5tq8Po9liJMAiW-8mKfdcpVTwq_I",
+  authDomain: "catweb-17233.firebaseapp.com",
+  databaseURL: "https://catweb-17233-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "catweb-17233",
+  storageBucket: "catweb-17233.firebasestorage.app",
+  messagingSenderId: "570888605898",
+  appId: "1:570888605898:web:e7f4cf78b06a8280792433"
+});
 
-        sec.style.display = (matchesSearch && matchesFilter && matchesAge) ? '' : 'none';
-      });
+var db = firebase.database();
+var messagesRef;
 
-      if (query) {
-        const matches = books.filter(b =>
-          b.title.toLowerCase().includes(query) &&
-          (filter === "all" || b.category === filter) &&
-          (age === "all" || b.age === age)
-        );
-        if (matches.length > 0) {
-          matches.forEach(b => {
-            const div = document.createElement('div');
-            div.textContent = b.title;
-            div.onclick = () => {
-              location.hash = '#' + b.id;
-              searchBar.value = b.title;
-              searchHints.innerHTML = '';
-              searchHints.style.display = 'none';
-            };
-            searchHints.appendChild(div);
-          });
-          searchHints.style.display = 'block';
-        }
-      }
-    }
+/* ---------- HASH + SALT ---------- */
+function hash(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) {
+    h = (h << 5) - h + str.charCodeAt(i);
+    h |= 0;
+  }
+  return h.toString();
+}
 
-    searchBar.addEventListener('input', updateDisplay);
-    filterDropdown.addEventListener('change', updateDisplay);
-    ageDropdown.addEventListener('change', updateDisplay);
+function makeSalt() {
+  return Math.random().toString(36).substring(2, 10);
+}
 
-    document.addEventListener('click', e => {
-      if (!searchBar.contains(e.target) && !searchHints.contains(e.target)) {
-        searchHints.style.display = 'none';
-      }
-    });
-  </script>
+/* ---------- STORAGE ---------- */
+var accounts = JSON.parse(localStorage.getItem("accounts") || "{}");
+var currentUser = localStorage.getItem("currentUser");
+
+/* ---------- UI ---------- */
+var loginDiv = document.getElementById("login");
+var chatDiv = document.getElementById("chat");
+var messagesDiv = document.getElementById("messages");
+var textInput = document.getElementById("text");
+var roomSelect = document.getElementById("room");
+
+/* ---------- ANTI-SPAM ---------- */
+var lastSend = 0;
+var lastText = "";
+var COOLDOWN = 1500;
+
+/* ---------- AUTH ---------- */
+function register() {
+  let u = user.value.trim();
+  let p = pass.value.trim();
+  if (!u || !p) return alert("Fill fields");
+  if (accounts[u]) return alert("User exists");
+
+  let salt = makeSalt();
+  accounts[u] = { salt: salt, hash: hash(p + salt) };
+  localStorage.setItem("accounts", JSON.stringify(accounts));
+  alert("Registered");
+}
+
+function login() {
+  let u = user.value.trim();
+  let p = pass.value.trim();
+  let acc = accounts[u];
+  if (!acc) return alert("No user");
+  if (hash(p + acc.salt) !== acc.hash) return alert("Wrong password");
+
+  currentUser = u;
+  localStorage.setItem("currentUser", u);
+  startChat();
+}
+
+function logout() {
+  localStorage.removeItem("currentUser");
+  location.reload();
+}
+
+/* ---------- CHAT ---------- */
+function startChat() {
+  loginDiv.style.display = "none";
+  chatDiv.style.display = "block";
+  welcome.textContent = "Hello, " + currentUser;
+  switchRoom();
+}
+
+function switchRoom() {
+  messagesDiv.innerHTML = "";
+  if (messagesRef) messagesRef.off();
+
+  let room = roomSelect.value;
+  messagesRef = db.ref("messages/" + room);
+  listen();
+}
+
+function send() {
+  let now = Date.now();
+  let text = textInput.value.trim();
+  if (!text) return;
+  if (now - lastSend < COOLDOWN) return;
+  if (text === lastText) return;
+
+  lastSend = now;
+  lastText = text;
+
+  messagesRef.push({
+    user: currentUser,
+    uid: currentUser,
+    text: text,
+    time: now
+  });
+
+  textInput.value = "";
+}
+
+textInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") send();
+});
+
+/* ---------- MESSAGES ---------- */
+var elements = {};
+
+function listen() {
+  messagesRef.limitToLast(100).on("child_added", snap => {
+    let msg = snap.val();
+    let key = snap.key;
+
+    let div = document.createElement("div");
+    div.className = "msg";
+
+    render(div, msg, key);
+    elements[key] = div;
+
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  });
+
+  messagesRef.on("child_changed", snap => {
+    let key = snap.key;
+    let msg = snap.val();
+    if (elements[key]) render(elements[key], msg, key);
+  });
+
+  messagesRef.on("child_removed", snap => {
+    let key = snap.key;
+    if (elements[key]) elements[key].remove();
+    delete elements[key];
+  });
+}
+
+function render(div, msg, key) {
+  let d = new Date(msg.time);
+  let time =
+    String(d.getHours()).padStart(2,"0") + ":" +
+    String(d.getMinutes()).padStart(2,"0");
+
+  div.innerHTML =
+    "<b>" + msg.user + "</b>: " + msg.text +
+    "<span class='time'>" + time + "</span>";
+
+  if (msg.uid === currentUser) {
+    let edit = document.createElement("span");
+    edit.textContent = "edit";
+    edit.className = "action edit";
+    edit.onclick = () => editMsg(key, msg.text);
+
+    let del = document.createElement("span");
+    del.textContent = "delete";
+    del.className = "action del";
+    del.onclick = () => messagesRef.child(key).remove();
+
+    div.appendChild(edit);
+    div.appendChild(del);
+  }
+}
+
+function editMsg(key, oldText) {
+  let n = prompt("Edit message:", oldText);
+  if (n && n !== oldText) {
+    messagesRef.child(key).update({ text: n });
+  }
+}
+
+/* ---------- AUTO LOGIN ---------- */
+if (currentUser) startChat();
+</script>
 </body>
 </html>
