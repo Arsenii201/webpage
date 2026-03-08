@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 8 March Mom</title>
+
+<style>
+
+/* ---------- BACKGROUND ---------- */
+
+body{
+margin:0;
+overflow:hidden;
+font-family:Arial, sans-serif;
+text-align:center;
+
+background:linear-gradient(-45deg,#ff9ac4,#ffd6e8,#ffc0cb,#ff9ac4);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* ---------- STARS ---------- */
+
+.star{
+position:absolute;
+width:3px;
+height:3px;
+background:white;
+opacity:0.8;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.2}
+to{opacity:1}
+}
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#111;
+overflow:hidden;
+font-family:Arial;
+}
+
+/* container */
+
+.scene{
+perspective:600px;
+}
+
+.heart-cloud{
+position:relative;
+width:0;
+height:0;
+transform-style:preserve-3d;
+animation:spin 12s linear infinite;
+}
+
+@keyframes spin{
+from{ transform:rotateY(0deg) rotateX(10deg); }
+to{ transform:rotateY(360deg) rotateX(10deg); }
+}
+
+/* heart particles */
+
+.p{
+position:absolute;
+font-size:22px;
+color:#ff4d7a;
+text-shadow:0 0 8px #ff7aa0;
+}
+
+.title{
+position:absolute;
+top:10%;
+width:100%;
+text-align:center;
+color:white;
+font-size:clamp(28px,5vw,70px);
+text-shadow:0 0 20px pink;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+position:relative;
+z-index:2;
+margin-top:15vh;
+padding:20px;
+}
+
+/* ---------- GLOWING TEXT ---------- */
+
+h1{
+font-size:clamp(36px,6vw,90px);
+color:#ff2f6d;
+
+text-shadow:
+0 0 10px #ff5c93,
+0 0 20px #ff5c93,
+0 0 40px #ff2f6d;
+
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px #ff5c93;}
+to{ text-shadow:0 0 30px #ff2f6d,0 0 60px #ff5c93;}
+}
+
+p{
+font-size:clamp(18px,3vw,32px);
+color:#333;
+}
+
+/* ---------- BUTTON ---------- */
+
+button{
+margin-top:30px;
+padding:16px 28px;
+font-size:clamp(16px,2vw,24px);
+
+border:none;
+border-radius:12px;
+
+background:#ff4f8b;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff2f6d;
+}
+
+/* ---------- FALLING FLOWERS ---------- */
+
+.flower{
+position:absolute;
+top:-50px;
+font-size:clamp(18px,2.5vw,30px);
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+/* ---------- FLOATING HEARTS ---------- */
+
+.heart{
+position:absolute;
+font-size:clamp(16px,2vw,24px);
+animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+from{
+transform:translateY(100vh);
+opacity:1;
+}
+to{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+/* ---------- EXPLOSION ---------- */
+
+.explosion{
+position:absolute;
+font-size:28px;
+pointer-events:none;
+animation:explode 1.5s forwards;
+}
+
+@keyframes explode{
+from{
+transform:translate(0,0) scale(1);
+opacity:1;
+}
+to{
+transform:translate(var(--x),var(--y)) scale(1.5);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌸 Happy 8 March Mom! 🌸</h1>
+
+<p>You are the best mom in the universe ❤️</p>
+
+<button onclick="flowerExplosion(window.innerWidth/2,window.innerHeight/2)">
+Tap for Flowers
+</button>
+
+<div class="scene">
+<div class="heart-cloud" id="heart"></div>
+</div>
+
+<!-- optional music -->
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4e4f0b2d3a.mp3?filename=soft-piano-ambient-110397.mp3">
+</audio>
+
+<script>
+
+/* ---------- STARS ---------- */
+
+for(let i=0;i<120;i++){
+let s=document.createElement("div");
+s.className="star";
+
+s.style.left=Math.random()*100+"vw";
+s.style.top=Math.random()*100+"vh";
+
+document.body.appendChild(s);
+}
+
+/* ---------- FALLING FLOWERS ---------- */
+
+for(let i=0;i<35;i++){
+
+let f=document.createElement("div");
+f.className="flower";
+f.innerHTML="🌸";
+
+f.style.left=Math.random()*100+"vw";
+f.style.animationDuration=(6+Math.random()*6)+"s";
+
+document.body.appendChild(f);
+}
+
+/* ---------- FLOATING HEARTS ---------- */
+
+function createHeart(){
+
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+
+h.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(h);
+
+setTimeout(()=>h.remove(),6000);
+}
+
+setInterval(createHeart,900);
+
+/* ---------- FLOWER EXPLOSION ---------- */
+
+function flowerExplosion(x,y){
+
+for(let i=0;i<20;i++){
+
+let e=document.createElement("div");
+e.className="explosion";
+e.innerHTML="🌸";
+
+e.style.left=x+"px";
+e.style.top=y+"px";
+
+let angle=Math.random()*2*Math.PI;
+let dist=120+Math.random()*120;
+
+let xMove=Math.cos(angle)*dist+"px";
+let yMove=Math.sin(angle)*dist+"px";
+
+e.style.setProperty("--x",xMove);
+e.style.setProperty("--y",yMove);
+
+document.body.appendChild(e);
+
+setTimeout(()=>e.remove(),1500);
+}
+}
+
+/* click anywhere */
+
+document.addEventListener("click",(e)=>{
+flowerExplosion(e.clientX,e.clientY);
+});
+
+</script>
+<script>
+
+let container=document.getElementById("heart");
+
+/* generate heart shape */
+
+function heartPoint(t){
+
+let x=16*Math.pow(Math.sin(t),3);
+let y=13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t);
+
+return {x:x,y:y};
+}
+
+let particles=220;
+
+for(let i=0;i<particles;i++){
+
+let t=Math.random()*Math.PI*2;
+let p=heartPoint(t);
+
+let el=document.createElement("div");
+el.className="p";
+el.innerHTML="❤";
+
+let scale=8;
+
+let x=p.x*scale;
+let y=p.y*scale;
+let z=(Math.random()-0.5)*120;
+
+el.style.transform=
+`translate3d(${x}px,${-y}px,${z}px)`;
+
+container.appendChild(el);
+}
+
+</script>
+</body>
+</html>
